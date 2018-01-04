@@ -31,7 +31,7 @@ Here is a sample trace file:
 0x804ae10: R 0xbf8ef498
 #eof 
 
-Cache Simulator (100 points)
+Cache Simulator 
 You will implement a cache simulator to evaluate different configurations of
 caches. It should be able to run with different traces files. The followings are the
 requirements for your cache simulator:
