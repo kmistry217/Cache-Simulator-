@@ -128,26 +128,7 @@ int main (int argc, char** argv){
 						if (mode == 'W'){
 							writes++;
 						}
-			
-			break; 
-					}
-					else{
-						if (i == assoc-1){
-							miss++;
-							reads++;
-							if (mode == 'W'){
-								writes++;
-							}
-							for (j = assoc-1; j>0; j--){
-								cache[indexBits]->line[j]->tag = cache[indexBits]->line[j-1]->tag;
-								cache[indexBits]->line[j]->valid = cache[indexBits]->line[j-1]->valid;				
-							}
-							cache[indexBits]->line[0]->tag = tagBits;
-							cache[indexBits]->line[0]->valid = 1;
-						}
-						else{
-							continue;
-						}
+					break; 
 					}
 				}
 				else{
